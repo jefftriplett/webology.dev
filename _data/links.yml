@@ -9,21 +9,21 @@
   url: https://github.com/jefftriplett
   css_class: fab fa-github
 
-- title: "GitLab: @jefftriplett"
-  url: https://gitlab.com/jefftriplett
-  css_class: fab fa-gitlab
+# - title: "GitLab: @jefftriplett"
+#   url: https://gitlab.com/jefftriplett
+#   css_class: fab fa-gitlab
 
-- title: "Jeff Triplett's DEV Profile"
-  url: https://dev.to/jefftriplett
-  css_class: fab fa-dev
+# - title: "Jeff Triplett's DEV Profile"
+#   url: https://dev.to/jefftriplett
+#   css_class: fab fa-dev
 
 # - title: "Jeff Triplett on Medium"
 #   url: https://medium.com/@webology
 #   css_class: fab fa-medium
 
-- title: "Jeff Triplett on Spotify"
-  url: https://open.spotify.com/user/jefftriplett
-  css_class: fab fa-spotify
+# - title: "Jeff Triplett on Spotify"
+#   url: https://open.spotify.com/user/jefftriplett
+#   css_class: fab fa-spotify
 
 - title: "Jeff Triplett on Pinboard"
   url: https://pinboard.in/u:jefftriplett
@@ -32,10 +32,26 @@
 - title: "Jeff Triplett on WIP"
   url: https://wip.chat/@jefftriplett
 
-- title: "Jeff Triplett on Flickr"
-  url: https://www.flickr.com/photos/webology
-  css_class: fab fa-flickr
+- title: "I am a PSF Director and Treasurer"
+  url: https://www.python.org/psf/records/board/history/
+  css_class: fas fa-handshake
 
-- title: "Jeff Triplett on Instagram"
-  url: https://www.instagram.com/jefftriplett/
-  css_class: fab fa-instagram
+- title: "I maintain on Django Packages"
+  url: https://djangopackages.org
+  css_class: fas fa-briefcase
+
+- title: "I co-founded/work on the Django News Newsletter"
+  url: https://django-news.com
+  css_class: fas fa-briefcase
+
+- title: "I maintain on Awesome Django"
+  url: https://awesomedjango.org
+  css_class: fas fa-briefcase
+
+- title: "I an the co-founder of DEFNA"
+  url: https://www.defna.org
+  css_class: fas fa-briefcase
+
+- title: "I am PSF Fellow (Q4 2018)"
+  url: https://www.python.org/psf/fellows/
+  css_class: fas fa-star

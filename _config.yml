@@ -26,17 +26,20 @@ permalink: /:title/
 # if you have any of social links below, uncomment the line
 # email:
 # facebook:
+dev: jefftriplett
+docker: jefftriplett
+flickr: webology
 github: jefftriplett
-# gitlab:
+gitlab: jefftriplett
 instagram: jefftriplett
 # lanyrd:
 # lastfm:
 # linkedin:
-# medium:
+medium: jefftriplett
 # pinterest:
 # quora:
 # reddit:
-# spotify:
+spotify: jefftriplett
 # stackoverflow:
 twitter: webology
 # vimeo:

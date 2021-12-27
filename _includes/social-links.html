@@ -1,13 +1,25 @@
 <div class="social-links">
-    {% if site.facebook %}
-        <a class="link" data-title="facebook.com/{{ site.facebook }}" href="https://facebook.com/{{ site.facebook }}" target="_blank">
-            <i class="fab fa-facebook"></i>
+    {% if site.dev %}
+        <a class="link" data-title="dev.to/{{ site.dev }}" href="https://dev.to/{{ site.dev }}" target="_blank">
+            <i class="fab fa-dev"></i>
+        </a>
+    {% endif %}
+
+    {% if site.docker %}
+        <a class="link" data-title="hub.docker.com/u/{{ site.docker }}" href="https://hub.docker.com/u/{{ site.docker }}" target="_blank">
+            <i class="fab fa-docker"></i>
         </a>
     {% endif %}
 
     {% if site.twitter %}
         <a class="link" data-title="twitter.com/{{ site.twitter }}" href="https://twitter.com/{{ site.twitter }}" target="_blank">
             <i class="fab fa-twitter"></i>
+        </a>
+    {% endif %}
+
+    {% if site.facebook %}
+        <a class="link" data-title="facebook.com/{{ site.facebook }}" href="https://facebook.com/{{ site.facebook }}" target="_blank">
+            <i class="fab fa-facebook"></i>
         </a>
     {% endif %}
 
