@@ -1,6 +1,5 @@
 - title: jefftriplett.com
   url: https://jefftriplett.com
-  css_class: fas fa-globe
 
 - title: "Twitter: @webology"
   url: https://twitter.com/webology
@@ -32,7 +31,6 @@
 
 - title: "Jeff Triplett on WIP"
   url: https://wip.chat/@jefftriplett
-  css_class: fas fa-construction
 
 - title: "Jeff Triplett on Flickr"
   url: https://www.flickr.com/photos/webology

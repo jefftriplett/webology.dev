@@ -3,7 +3,9 @@ name: Jeff Triplett @webology
 bio:
 
 # twitter summary info
-description: "jeff's linktreehosted on github pages."
+description: "@webology's Link Tree clone on GitHub Pages."
+
+favicon: https://fav.farm/✨
 
 # if it's an external image, update below for true
 # better with square images
@@ -21,24 +23,24 @@ permalink: /:title/
 # analytics-piwik-url: 'piwik.my-host.com'
 # analytics-piwik-id: 1
 
-# if you don't have any of social below, comment the line
+# if you have any of social links below, uncomment the line
+# email:
 # facebook:
-twitter: webology
-instagram: jefftriplett
-# pinterest:
-# linkedin: johndoe
-# youtube: 
-# spotify:  
 github: jefftriplett
-# gitlab: 
-# lastfm: 
-# stackoverflow: 
-# quora: 
-# reddit: 
-# medium: 
-# vimeo: myvimeo
-# lanyrd: mylanyrd
-# email: johndoe@gmail.com
+# gitlab:
+instagram: jefftriplett
+# lanyrd:
+# lastfm:
+# linkedin:
+# medium:
+# pinterest:
+# quora:
+# reddit:
+# spotify:
+# stackoverflow:
+twitter: webology
+# vimeo:
+# youtube:
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -60,19 +62,13 @@ pagination:
 about: false
 blog: false
 
-# If you want to include your resume, set to true
-# and specify source (external or local).
-resume: false
-#resume-external: true
-#resume-url: https://google.com/?q=my+resume
-
 # do you want some animations?
 animation: true
 
 plugins:
-  - jekyll-seo-tag
-  - jekyll-gist
-  - jemoji
+- jekyll-gist
+- jekyll-seo-tag
+- jemoji
 
 jekyll-mentions:
   base_url: https://github.com
@@ -84,13 +80,9 @@ compress_html:
       - stage
 
 exclude:
-  [
-    "docker-compose.yml",
-    "FAQ.md",
-    "Gemfile",
-    "Gemfile.lock",
-    "node_modules",
-    "README.md",
-    "travis.sh",
-    "vendor",
-  ]
+- docker-compose.yml
+- Gemfile
+- Gemfile.lock
+- node_modules
+- README.md
+- vendor
