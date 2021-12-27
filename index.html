@@ -3,12 +3,14 @@ layout: page
 title: Links
 ---
 <div class="main">
-  {% for post in site.posts %}
-
-  <a href="{{ post.excerpt | remove: '<p>' | remove: '</p>' }}" class="button" target="_blank">{{ post.title }}</a>
-
+  {% for link in site.data.links %}
+  <div class="mt-8"></div>
+  <div class="px-4 mx-auto mb-4 sm:max-w-xl">
+    <div class="rounded-xl shadow-sm border-2 border-gray-100 px-6 py-4 text-gray-100">
+      <i class="{{ link.css_class }} text-gray-100"></i>
+      <a href="{{ link.url }}" class="text-gray-100 font-semibold text-md" target="_blank">{{ link.title }}</a>
+    </div>
+  </div>
   {% endfor %}
+  <div class="mt-8"></div>
 </div>
-
-
-            

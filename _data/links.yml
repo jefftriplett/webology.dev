@@ -1,0 +1,43 @@
+- title: jefftriplett.com
+  url: https://jefftriplett.com
+  css_class: fas fa-globe
+
+- title: "Twitter: @webology"
+  url: https://twitter.com/webology
+  css_class: fab fa-twitter
+
+- title: "GitHub: @jefftriplett"
+  url: https://github.com/jefftriplett
+  css_class: fab fa-github
+
+- title: "GitLab: @jefftriplett"
+  url: https://gitlab.com/jefftriplett
+  css_class: fab fa-gitlab
+
+- title: "Jeff Triplett's DEV Profile"
+  url: https://dev.to/jefftriplett
+  css_class: fab fa-dev
+
+- title: "Jeff Triplett on Medium"
+  url: https://medium.com/@webology
+  css_class: fab fa-medium
+
+- title: "Jeff Triplett on Spotify"
+  url: https://open.spotify.com/user/jefftriplett
+  css_class: fab fa-spotify
+
+- title: "Jeff Triplett on Pinboard"
+  url: https://pinboard.in/u:jefftriplett
+  css_class: fas fa-thumbtack
+
+- title: "Jeff Triplett on WIP"
+  url: https://wip.chat/@jefftriplett
+  css_class: fas fa-construction
+
+- title: "Jeff Triplett on Flickr"
+  url: https://www.flickr.com/photos/webology
+  css_class: fab fa-flickr
+
+- title: "Jeff Triplett on Instagram"
+  url: https://www.instagram.com/jefftriplett/
+  css_class: fab fa-instagram
