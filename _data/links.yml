@@ -56,6 +56,10 @@
   url: https://www.defna.org
   css_class: fas fa-briefcase
 
+- title: "2019 Malcolm Tredinnick Memorial Prize recipient"
+  url: https://www.djangoproject.com/weblog/2019/dec/17/2019-malcolm-tredinnick-prize--jeff-triplett/
+  css_class: fas fa-star
+
 - title: "I am PSF Fellow (Q4 2018)"
   url: https://www.python.org/psf/fellows/
   css_class: fas fa-star
