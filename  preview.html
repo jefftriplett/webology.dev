@@ -5,14 +5,20 @@ sitemap: false
 title: Preview
 ---
 
-<section class="px-4 py-8 mx-auto mb-8 text-center sm:max-w-xl">
+<section class="px-4 py-8 mx-auto mb-12 text-center sm:max-w-2xl">
+    <div class="mt-32"></div>
+
     <div class="flex justify-center">
         <span class="link">
-            <img class="object-center mb-3 rounded-full w-28" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+            <img class="object-center w-64 mb-3 rounded-full" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
         </span>
     </div>
 
-    <h1 class="text-5xl font-semibold text-gray-100">{{ site.name }}</h1>
+    <h1 class="text-6xl font-semibold text-gray-100">{{ site.name }}</h1>
 
-    <h2 class="text-3xl font-semibold text-gray-100">{{ site.bio }}</h2>
+    {% if site.bio %}
+        <h2 class="mt-12 text-4xl font-semibold text-gray-100">{{ site.bio }}</h2>
+    {% endif %}
+
+    <h2 class="mt-12 text-5xl font-semibold text-gray-100">{{ site.url }}</h2>
 </section>
