@@ -13,7 +13,6 @@ layout: null
         {% seo %}
         <link rel="icon" href="{{ site.favicon | default: "https://fav.farm/🌲" }}" />
         <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
-        <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="https://cdn.tailwindcss.com"></script>
         <style type="text/tailwindcss">
@@ -30,18 +29,9 @@ layout: null
     </head>
     <body class="min-h-screen bg-gradient-to-b from-blue-700 to-gray-800">
         <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
-            {% if page.tag %}
-                <div class="post">
-            {% else %}
-                {% if showHeader != true %}
-                    <div class="page {{ page.title | downcase }}">
-                {% else %}
-                    <div class="{{ page.title | downcase }}">
-                {% endif %}
-            {% endif %}
-
-            {{ content }}
+            <div class="{{ page.title | downcase }}">
+                {{ content }}
+            </div>
         </div>
-    </div>
-</body>
+    </body>
 </html>
