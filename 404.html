@@ -1,14 +1,16 @@
 ---
 layout: default
 permalink: /404.html
+sitemap: false
+title: '404: Page not found'
 ---
 
-<section class="lost-container">
-    <h1>Uh oh!</h1>
-    <div class="link">
-        <img class="selfie" alt="{{ site.name }}" src="{{ site.url }}/assets/images/error.gif" />
+<section class="px-4 py-8 mx-auto mb-4 text-center sm:max-w-xl">
+    <h1 class="title">
+        Sorry, we've misplaced that URL or it's pointing to something that doesn't exist.
+        <a class="underline" href="{{ site.baseurl }}/">Head back home</a> to try finding it again.
+    </h1>
+    <div class="mt-16">
+        <img src="https://d262ilb51hltx0.cloudfront.net/max/800/1*sXABeKaBTbICxIAPLsnB-Q.gif" />
     </div>
-    <br />
-    <br />
-    <a href="/">Take me home!</a>
-</section>
+</section
