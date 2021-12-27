@@ -70,7 +70,9 @@ animation: true
 
 plugins:
 - jekyll-gist
+- jekyll-remote-theme
 - jekyll-seo-tag
+- jekyll-sitemap
 - jemoji
 
 jekyll-mentions:
