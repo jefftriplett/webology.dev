@@ -7,8 +7,8 @@ description: "jeff's linktreehosted on github pages."
 
 # if it's an external image, update below for true
 # better with square images
-external-image: false
-picture: assets/images/profile.jpg
+external-image: true
+picture: https://avatars.githubusercontent.com/u/50527?v=4
 
 url: "https://webology.dev"
 enforce_ssl: "webology.dev"
