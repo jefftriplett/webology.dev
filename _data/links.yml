@@ -18,9 +18,9 @@
   url: https://dev.to/jefftriplett
   css_class: fab fa-dev
 
-- title: "Jeff Triplett on Medium"
-  url: https://medium.com/@webology
-  css_class: fab fa-medium
+# - title: "Jeff Triplett on Medium"
+#   url: https://medium.com/@webology
+#   css_class: fab fa-medium
 
 - title: "Jeff Triplett on Spotify"
   url: https://open.spotify.com/user/jefftriplett
