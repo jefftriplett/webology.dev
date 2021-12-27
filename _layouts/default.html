@@ -4,7 +4,6 @@ layout: null
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
     {% if site.analytics-google %}
         {% include analytics-google.html %}
     {% endif %}
@@ -12,15 +11,14 @@ layout: null
     <meta charset="utf-8">
     <meta name=viewport content="width=device-width, initial-scale=1">
     <meta name=author content="{{ site.name }}">
-
     {% seo %}
-
-    {% include favicon.html %}
-
+    <link rel="icon" href="https://fav.farm/✨" />
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}{{ "/feed.xml" }}" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+    </style>
 </head>
 <body class="bg-gradient-to-b from-blue-400 to-blue-800 h-screen h-full">
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
