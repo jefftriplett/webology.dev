@@ -37,9 +37,13 @@ medium: jefftriplett
 # reddit:
 spotify: jefftriplett
 # stackoverflow:
-twitter: webology
+# twitter: webology
 # vimeo:
 # youtube:
+
+twitter:
+  card: summary_large_image
+
 
 # do you want a larger site? change the option below
 # options: [normal, large] | default: normal
@@ -81,6 +85,7 @@ compress_html:
       - stage
 
 exclude:
+- bin
 - docker-compose.yml
 - Gemfile
 - Gemfile.lock
