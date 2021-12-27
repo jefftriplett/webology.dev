@@ -28,7 +28,7 @@ layout: null
             }
         </style>
     </head>
-    <body class="{% if site.data.links.size > 5 %}h-full{% else %}h-screen{% endif%} bg-gradient-to-b from-blue-700 to-gray-800">
+    <body class="min-h-screen bg-gradient-to-b from-blue-700 to-gray-800">
         <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
             {% if page.tag %}
                 <div class="post">
