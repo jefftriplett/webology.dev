@@ -32,6 +32,10 @@
 - title: "Jeff Triplett on WIP"
   url: https://wip.chat/@jefftriplett
 
+- title: "I am a Partner and Developer at REVSYS"
+  url: https://www.revsys.com
+  css_class: fas fa-briefcase
+
 - title: "I am a PSF Director and Treasurer"
   url: https://www.python.org/psf/records/board/history/
   css_class: fas fa-handshake
