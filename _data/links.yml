@@ -4,17 +4,21 @@
 - title: "Twitter: @webology"
   url: https://twitter.com/webology
   css_class: fab fa-twitter
+  nofollow: true
 
 - title: "GitHub: @jefftriplett"
   url: https://github.com/jefftriplett
   css_class: fab fa-github
+  nofollow: true
 
 - title: "Jeff Triplett on Pinboard"
   url: https://pinboard.in/u:jefftriplett
   css_class: fas fa-thumbtack
+  nofollow: true
 
 - title: "Jeff Triplett on WIP"
   url: https://wip.chat/@jefftriplett
+  nofollow: true
 
 - title: "I am a Partner and Developer at REVSYS"
   url: https://www.revsys.com
@@ -23,6 +27,7 @@
 - title: "I am a PSF Director and Treasurer"
   url: https://www.python.org/psf/records/board/history/
   css_class: fas fa-handshake
+  nofollow: true
 
 - title: "I maintain on Django Packages"
   url: https://djangopackages.org
@@ -36,14 +41,16 @@
   url: https://awesomedjango.org
   css_class: fas fa-briefcase
 
-- title: "I an the co-founder of DEFNA"
+- title: "I am the co-founder of DEFNA"
   url: https://www.defna.org
   css_class: fas fa-briefcase
 
 - title: "2019 Malcolm Tredinnick Memorial Prize recipient"
   url: https://www.djangoproject.com/weblog/2019/dec/17/2019-malcolm-tredinnick-prize--jeff-triplett/
   css_class: fas fa-star
+  nofollow: true
 
 - title: "I am PSF Fellow (Q4 2018)"
   url: https://www.python.org/psf/fellows/
   css_class: fas fa-star
+  nofollow: true
