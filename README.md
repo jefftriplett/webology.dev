@@ -1,3 +1,15 @@
+# webolgy.dev
+
+tl;dr I built a Linktree-clone using GitHub Pages (Jekyll), TailwindCSS (JIT), and Font Awesome.
+
+Longer: I bought webology.dev a few years back and wanted to build a more generic place to point people to things I'm doing instead of seeing that I don't blog enough.
+
+![screenshot](assets/images/screenshot.png)
+
+----
+
+## Original README
+
 ## Indigo-based Minimalist Jekyll Template
 
 #### Modified from the original for use as a social media link tree.
@@ -5,8 +17,6 @@
 I created this is an alternative to paid-for link services and to build something I can manage using familiar workflows. Oh, and it doesn't hurt that it's open source. Enjoy. -zd
 
 [Demo](https://zchef2k.github.io/indigo-linkinbio)
-
-![screen-shot](assets/images/screen-shot.jpg)
 
 ## What's inside
 
