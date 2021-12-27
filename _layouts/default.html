@@ -18,9 +18,15 @@ layout: null
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style type="text/tailwindcss">
+    .title {
+        @apply text-gray-100 font-semibold text-3xl;
+    }
+    .description {
+        @apply text-gray-100 font-semibold text-xl;
+    }
     </style>
 </head>
-<body class="bg-gradient-to-b from-blue-400 to-blue-800 h-screen h-full">
+<body class="bg-gradient-to-b from-blue-800 to-gray-800 h-screen h-full">
     <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
         {% if page.tag %}
             <div class="post">
