@@ -1,22 +1,22 @@
 <header class="px-4 py-8 mx-auto mb-4 text-center sm:max-w-xl">
-    {% if site.about %}
-        <div class="flex justify-center">
-            <a class="link" href="{{ site.url }}/about">
-                <img class="object-center mb-3 rounded-full w-28" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
-            </a>
-        </div>
-    {% else %}
-        <div class="flex justify-center">
-            <span class="link">
-                <img class="object-center mb-3 rounded-full w-28" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
-            </span>
-        </div>
-    {% endif %}
+  {% if site.about %}
+    <div class="flex justify-center">
+      <a class="link" href="{{ site.url }}/about">
+        <img class="object-center mb-3 rounded-full w-28" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+      </a>
+    </div>
+  {% else %}
+    <div class="flex justify-center">
+      <span class="link">
+        <img class="object-center mb-3 rounded-full w-28" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+      </span>
+    </div>
+  {% endif %}
 
-    <h1 class="title">{{ site.name }}</h1>
+  <h1 class="title">{{ site.name }}</h1>
 
-    {% if site.bio %}
-        <h2 class="description">{{ site.bio }}</h2>
-    {% endif %}
+  {% if site.bio %}
+    <h2 class="description">{{ site.bio }}</h2>
+  {% endif %}
 
 </header>

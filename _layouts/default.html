@@ -3,35 +3,35 @@ layout: null
 ---
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        {% if site.analytics-google %}
-            {% include analytics-google.html %}
-        {% endif %}
-        <meta charset="utf-8">
-        <meta name=viewport content="width=device-width, initial-scale=1">
-        <meta name=author content="{{ site.name }}">
-        {% seo %}
-        <link rel="icon" href="{{ site.favicon | default: "https://fav.farm/🌲" }}" />
-        <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdn.tailwindcss.com"></script>
-        <style type="text/tailwindcss">
-            .description {
-                @apply text-xl font-semibold text-gray-100;
-            }
-            .social-links {
-                @apply px-4 py-4 mx-auto mb-4 text-4xl font-semibold text-center text-gray-100 sm:max-w-xl;
-            }
-            .title {
-                @apply text-3xl font-semibold text-gray-100;
-            }
-        </style>
-    </head>
-    <body class="min-h-screen bg-gradient-to-b from-blue-700 to-gray-800">
-        <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
-            <div class="{{ page.title | downcase }}">
-                {{ content }}
-            </div>
-        </div>
-    </body>
+  <head>
+    {% if site.analytics-google %}
+      {% include analytics-google.html %}
+    {% endif %}
+    <meta charset="utf-8">
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    <meta name=author content="{{ site.name }}">
+    {% seo %}
+    <link rel="icon" href="{{ site.favicon | default: "https://fav.farm/🌲" }}" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+      .description {
+        @apply text-xl font-semibold text-gray-100;
+      }
+      .social-links {
+        @apply px-4 py-4 mx-auto mb-4 text-4xl font-semibold text-center text-gray-100 sm:max-w-xl;
+      }
+      .title {
+        @apply text-3xl font-semibold text-gray-100;
+      }
+    </style>
+  </head>
+  <body class="min-h-screen bg-gradient-to-b from-blue-700 to-gray-800">
+    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
+      <div class="{{ page.title | downcase }}">
+        {{ content }}
+      </div>
+    </div>
+  </body>
 </html>
