@@ -33,16 +33,16 @@
   url: https://django-news.com
   css_class: fas fa-briefcase
 
-- title: "I co-maintain Django Packages"
+- title: "I cofounded DEFNA"
+  url: https://www.defna.org
+  css_class: fas fa-briefcase
+
+- title: "I co-maintain the Django Packages project"
   url: https://djangopackages.org
   css_class: fas fa-briefcase
 
-- title: "I co-maintain Awesome Django"
+- title: "I co-maintain the Awesome Django project"
   url: https://awesomedjango.org
-  css_class: fas fa-briefcase
-
-- title: "I cofounded DEFNA"
-  url: https://www.defna.org
   css_class: fas fa-briefcase
 
 - title: "2019 Malcolm Tredinnick Memorial Prize recipient"
