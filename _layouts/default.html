@@ -27,11 +27,9 @@ layout: null
       }
     </style>
   </head>
-  <body class="min-h-screen bg-gradient-to-b from-blue-700 to-gray-800">
-    <div class="wrapper-{% if site.width == "normal" %}normal{% elsif site.width == "large" %}large{% endif %}">
-      <div class="{{ page.title | downcase }}">
-        {{ content }}
-      </div>
+  <body class="min-h-screen bg-gradient-to-b from-blue-600 to-gray-900">
+    <div class="grid grid-cols-1 overflow-y-auto {{ page.title | downcase }}">
+      {{ content }}
     </div>
   </body>
 </html>
