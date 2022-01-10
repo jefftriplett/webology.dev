@@ -3,14 +3,14 @@ image: /assets/images/preview.png
 layout: page
 title: Links
 ---
+
 <div class="main">
   {% for link in site.data.links %}
-    <div class="px-4 mx-auto mb-8 sm:max-w-xl">
+    <div class="px-4 mx-auto sm:max-w-2xl mb-4">
       <div class="px-6 py-4 text-gray-100 border-2 border-gray-100 shadow-sm rounded-3xl text-gray-100 text-2xl">
         <i class="{% if link.css_class %}{{ link.css_class }}{% else %}fas fa-globe{% endif %} pr-1"></i>
-        <a href="{{ link.url }}" class="font-semibold" {% if link.nofollow %}rel="nofollow" {% endif %} target="_blank">{{ link.title }}</a>
+        <a href="{{ link.url }}" class="" {% if link.nofollow %}rel="nofollow" {% endif %} target="_blank">{{ link.title }}</a>
       </div>
     </div>
   {% endfor %}
-  <div class="mt-8"></div>
 </div>
