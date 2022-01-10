@@ -40,3 +40,6 @@
         --in-place \
         --tabwidth 2 \
         *.html _includes/*.html _layouts/*.html
+
+@screenshot:
+    npx pageres https://webology.dev/ --overwrite --filename=./assets/images/screenshot
