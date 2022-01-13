@@ -32,12 +32,12 @@
   url: https://django-news.com
   css_class: fas fa-briefcase
 
-- title: "Awesome Django Maintainer"
-  url: https://awesomedjango.org
-  css_class: fas fa-briefcase
-
 - title: "Django Packages Maintainer"
   url: https://djangopackages.org
+  css_class: fas fa-briefcase
+
+- title: "Awesome Django Maintainer"
+  url: https://awesomedjango.org
   css_class: fas fa-briefcase
 
 # - title: "2019 Malcolm Tredinnick Memorial Prize recipient"
