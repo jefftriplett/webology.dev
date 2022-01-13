@@ -43,3 +43,4 @@
 
 @screenshot:
     npx pageres https://webology.dev/ --overwrite --filename=./assets/images/screenshot
+    npx pageres https://webology.dev/preview/ --overwrite --filename=./assets/images/preview
