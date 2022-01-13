@@ -35,6 +35,12 @@
     </a>
   {% endif %}
 
+  {% if site.pinboard %}
+    <a class="link" data-title="pinboard.in/u:{{ site.pinboard }}" href="https://pinboard.in/u:{{ site.pinboard }}" rel="nofollow" target="_blank">
+      <i class="fas fa-thumbtack"></i>
+    </a>
+  {% endif %}
+
   {% if site.pinterest %}
     <a class="link" data-title="pinterest.com/{{ site.pinterest }}" href="https://pinterest.com/{{ site.pinterest }}" rel="nofollow" target="_blank">
       <i class="fab fa-pinterest"></i>
@@ -42,7 +48,7 @@
   {% endif %}
 
   {% if site.linkedin %}
-    <a class="link" data-title="linkedin.com/in/{{ site.linkedin }}" href="https://www.linkedin.com/in/{{ site.linkedin }}" rel="nofollow" target="_blank">
+    <a class="link" data-title="pinboard.in/u:{{ site.linkedin }}" href="https://pinboard.in/u:{{ site.linkedin }}" rel="nofollow" target="_blank">
       <i class="fab fa-linkedin"></i>
     </a>
   {% endif %}

@@ -1,56 +1,51 @@
-- title: jefftriplett.com
+- title: "I occassionally blog on jefftriplett.com"
   url: https://jefftriplett.com
 
-- title: "Twitter: @webology"
+- title: "Follow me on Twitter (@webology)"
   url: https://twitter.com/webology
   css_class: fab fa-twitter
   nofollow: true
 
-- title: "GitHub: @jefftriplett"
+- title: "Follow me on GitHub (@jefftriplett)"
   url: https://github.com/jefftriplett
   css_class: fab fa-github
   nofollow: true
 
-- title: "Jeff Triplett on Pinboard"
-  url: https://pinboard.in/u:jefftriplett
-  css_class: fas fa-thumbtack
-  nofollow: true
-
-- title: "Jeff Triplett on WIP"
-  url: https://wip.chat/@jefftriplett
-  nofollow: true
-
-- title: "I am a Partner and Developer at REVSYS"
+- title: "Partner and Developer at REVSYS"
   url: https://www.revsys.com
   css_class: fas fa-briefcase
 
-- title: "I am a PSF Director and Treasurer"
+- title: "PSF Director and Treasurer"
   url: https://www.python.org/psf/records/board/history/
   css_class: fas fa-handshake
   nofollow: true
 
-- title: "I cofounded/work on the Django News Newsletter"
-  url: https://django-news.com
-  css_class: fas fa-briefcase
-
-- title: "I cofounded DEFNA"
+- title: "DEFNA Cofounder"
   url: https://www.defna.org
   css_class: fas fa-briefcase
 
-- title: "I co-maintain the Django Packages project"
-  url: https://djangopackages.org
+- title: "DjangoCon US 2015-2022 Organizer"
+  url: https://www.defna.org
   css_class: fas fa-briefcase
 
-- title: "I co-maintain the Awesome Django project"
+- title: "Django News Newsletter Cofounder"
+  url: https://django-news.com
+  css_class: fas fa-briefcase
+
+- title: "Awesome Django Maintainer"
   url: https://awesomedjango.org
   css_class: fas fa-briefcase
 
-- title: "2019 Malcolm Tredinnick Memorial Prize recipient"
-  url: https://www.djangoproject.com/weblog/2019/dec/17/2019-malcolm-tredinnick-prize--jeff-triplett/
-  css_class: fas fa-star
-  nofollow: true
+- title: "Django Packages Maintainer"
+  url: https://djangopackages.org
+  css_class: fas fa-briefcase
 
-- title: "I am PSF Fellow (Q4 2018)"
-  url: https://www.python.org/psf/fellows/
-  css_class: fas fa-star
-  nofollow: true
+# - title: "2019 Malcolm Tredinnick Memorial Prize recipient"
+#   url: https://www.djangoproject.com/weblog/2019/dec/17/2019-malcolm-tredinnick-prize--jeff-triplett/
+#   css_class: fas fa-star
+#   nofollow: true
+
+# - title: "I am a PSF Fellow (Q4 2018)"
+#   url: https://www.python.org/psf/fellows/
+#   css_class: fas fa-star
+#   nofollow: true
