@@ -1,6 +1,11 @@
 - title: "I occassionally blog on jefftriplett.com"
   url: https://jefftriplett.com
 
+- title: "Follow me on Mastodon (@webology)"
+  url: https://mastodon.social/@webology
+  css_class: fab fa-mastodon
+  nofollow: true
+
 - title: "Follow me on Twitter (@webology)"
   url: https://twitter.com/webology
   css_class: fab fa-twitter
@@ -15,17 +20,17 @@
   url: https://www.revsys.com
   css_class: fas fa-briefcase
 
-- title: "PSF Director and Treasurer"
+- title: "PSF Director and Vice Chair"
   url: https://www.python.org/psf/records/board/history/
   css_class: fas fa-handshake
   nofollow: true
 
-- title: "DEFNA Cofounder"
+- title: "DEFNA President and Cofounder"
   url: https://www.defna.org
   css_class: fas fa-briefcase
 
 - title: "DjangoCon US 2015-2022 Organizer"
-  url: https://www.defna.org
+  url: https://www.djangocon.us
   css_class: fas fa-briefcase
 
 - title: "Django News Newsletter Cofounder"
