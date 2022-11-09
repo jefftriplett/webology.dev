@@ -88,6 +88,9 @@ exclude:
 - Gemfile
 - Gemfile.lock
 - justfile
+- justfile
 - node_modules
 - README.md
+- requirements.in
+- shots.yml
 - vendor

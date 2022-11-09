@@ -5,6 +5,9 @@
 @bootstrap:
     docker-compose pull
     docker-compose build
+    pip install -r requirements.in
+    playwright install
+
 
 # invoked by continuous integration servers to run tests
 @cibuild:
@@ -41,6 +44,5 @@
         --tabwidth 2 \
         *.html _includes/*.html _layouts/*.html
 
-@screenshot:
-    npx pageres https://webology.dev/ --overwrite --filename=./assets/images/screenshot
-    npx pageres https://webology.dev/preview/ --overwrite --filename=./assets/images/preview
+@screenshots:
+    shot-scraper multi --no-clobber ./shots.yml
