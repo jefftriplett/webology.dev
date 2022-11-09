@@ -8,7 +8,6 @@
     pip install -r requirements.in
     playwright install
 
-
 # invoked by continuous integration servers to run tests
 @cibuild:
     just bootstrap
@@ -44,5 +43,5 @@
         --tabwidth 2 \
         *.html _includes/*.html _layouts/*.html
 
-@screenshots:
-    shot-scraper multi --no-clobber ./shots.yml
+@screenshots ARGS="--no-clobber":
+    shot-scraper multi {{ ARGS }} ./shots.yml
