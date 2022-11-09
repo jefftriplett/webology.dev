@@ -5,10 +5,10 @@ tl;dr I built a Linktree-clone using GitHub Pages (Jekyll), TailwindCSS (JIT), a
 Longer: I bought webology.dev a few years back and wanted to build a more generic place to point people to things I'm doing instead of seeing that I don't blog enough.
 
 ## Website Preview
-![screenshot](assets/images/screenshot.png){:width="50%"}
+![screenshot](assets/images/screenshot.png)
 
 ## Social Preview
-![preview](assets/images/preview.png){:width="50%"}
+![preview](assets/images/preview.png)
 
 ## Original Theme
 
