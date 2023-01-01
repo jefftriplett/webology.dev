@@ -1,10 +1,13 @@
+assets:
+  cachebust: hard
+
 # main text of home
-name: Jeff Triplett @webology
 bio:
 
 # twitter summary info
 description: "@webology's Link Tree clone on GitHub Pages."
-
+name: "Jeff Triplett @webology"
+title: "@webology's Link Tree clone on GitHub Pages."
 favicon: https://fav.farm/✨
 
 # if it's an external image, update below for true
@@ -67,7 +70,11 @@ about: false
 blog: false
 
 plugins:
+- jekyll-feed
 - jekyll-gist
+- jekyll-mentions
+- jekyll-paginate
+- jekyll-redirect-from
 - jekyll-remote-theme
 - jekyll-seo-tag
 - jekyll-sitemap
@@ -83,14 +90,16 @@ compress_html:
       - stage
 
 exclude:
+- "*.yaml"
+- "*.yml"
 - bin
+- CNAME
 - docker-compose.yml
 - Gemfile
 - Gemfile.lock
 - justfile
-- justfile
+- LICENSE
 - node_modules
 - README.md
 - requirements.in
-- shots.yml
 - vendor
