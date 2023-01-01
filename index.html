@@ -5,12 +5,17 @@ title: Links
 ---
 
 <div class="main">
-  {% for link in site.data.links %}
-    <div class="px-4 mx-auto sm:max-w-2xl mb-4">
-      <div class="px-6 py-4 text-gray-100 border-2 border-gray-200 shadow-sm rounded-full text-gray-100 hover:text-blue-800 hover:bg-gray-200 text-2xl">
-        <i class="{% if link.css_class %}{{ link.css_class }}{% else %}fas fa-globe{% endif %} pr-1"></i>
-        <a href="{{ link.url }}" class="" {% if link.rel %}rel="{{ link.rel }}" {% endif %}target="_blank">{{ link.title }}</a>
-      </div>
-    </div>
-  {% endfor %}
+  {%- for link in site.data.links -%}
+    <ul class="px-4 mx-auto sm:max-w-2xl mb-4">
+      <li class="px-6 py-4 text-gray-100 border-2 border-gray-200 shadow-sm rounded-full text-gray-100 hover:text-blue-800 hover:bg-gray-200 text-2xl">
+        <i
+          class="{% if link.css_class %}{{ link.css_class }} pr-1{% else %}{% endif %}"></i>
+        <a
+          href="{{ link.url }}"
+          class=""
+          {% if link.rel %}rel="{{ link.rel }}" {% endif %}
+          target="_blank">{{ link.title }}</a>
+      </li>
+    </ul>
+  {%- endfor -%}
 </div>
