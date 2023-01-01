@@ -1,0 +1,24 @@
+{% if include.link.url contains "https://dev.to" %}{% capture css_class %}fab fa-dev{% endcapture %}
+{% elsif include.link.url contains "https://facebook.com/" %}{% capture css_class %}fab fa-facebook{% endcapture %}
+{% elsif include.link.url contains "https://github.com/" %}{% capture css_class %}fab fa-github{% endcapture %}
+{% elsif include.link.url contains "https://gitlab.com/" %}{% capture css_class %}fab fa-gitlab{% endcapture %}
+{% elsif include.link.url contains "https://hub.docker.com/" %}{% capture css_class %}fab fa-docker{% endcapture %}
+{% elsif include.link.url contains "https://instagram.com/" %}{% capture css_class %}fab fa-instagram{% endcapture %}
+{% elsif include.link.url contains "https://lanyrd.com/" %}{% capture css_class %}fab fa-microphone{% endcapture %}
+{% elsif include.link.url contains "https://last.fm/" %}{% capture css_class %}fab fa-lastfm{% endcapture %}
+{% elsif include.link.url contains "https://mastodon.social/" %}{% capture css_class %}fab fa-mastodon{% endcapture %}
+{% elsif include.link.url contains "https://medium.com/" %}{% capture css_class %}fab fa-medium{% endcapture %}
+{% elsif include.link.url contains "https://open.spotify.com/" %}{% capture css_class %}fab fa-spotify{% endcapture %}
+{% elsif include.link.url contains "https://pinboard.in/" %}{% capture css_class %}fas fa-thumbtack{% endcapture %}
+{% elsif include.link.url contains "https://pinterest.com/" %}{% capture css_class %}fab fa-pinterest{% endcapture %}
+{% elsif include.link.url contains "https://plus.google.com/" %}{% capture css_class %}fab fa-google{% endcapture %}
+{% elsif include.link.url contains "https://stackoverflow.com/" %}{% capture css_class %}fab fa-stackoverflow{% endcapture %}
+{% elsif include.link.url contains "https://twitter.com/" %}{% capture css_class %}fab fa-twitter{% endcapture %}
+{% elsif include.link.url contains "https://vimeo.com/" %}{% capture css_class %}fab fa-vimeo{% endcapture %}
+{% elsif include.link.url contains "https://www.linkedin.com/" %}{% capture css_class %}fab fa-linkedin{% endcapture %}
+{% elsif include.link.url contains "https://www.quora.com/" %}{% capture css_class %}fab fa-quora{% endcapture %}
+{% elsif include.link.url contains "https://www.reddit.com/" %}{% capture css_class %}fab fa-reddit{% endcapture %}
+{% elsif include.link.url contains "https://youtube.com/" %}{% capture css_class %}fab fa-youtube{% endcapture %}
+{% elsif include.link.url contains "mailto:" %}{% capture css_class %}fab fa-mail{% endcapture %}
+{% else %}{% capture css_class %}{% endcapture %}
+{% endif %}
