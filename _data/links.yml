@@ -1,58 +1,62 @@
 - title: "I occassionally blog on jefftriplett.com"
   url: https://jefftriplett.com
+  css_class: text-white fas fa-pencil-alt
+  rel: me
 
-- title: "Follow me on Mastodon (@webology)"
+- title: "Follow @webology on Mastodon"
   url: https://mastodon.social/@webology
   css_class: fab fa-mastodon
   rel: me
 
-- title: "Follow me on Twitter (@webology)"
+- title: "Follow @webology on Twitter"
   url: https://twitter.com/webology
   css_class: fab fa-twitter
   rel: me
 
-- title: "Follow me on GitHub (@jefftriplett)"
+- title: "Follow @jefftriplett on GitHub"
   url: https://github.com/jefftriplett
   css_class: fab fa-github
   rel: nofollow
 
 - title: "Partner and Developer at REVSYS"
   url: https://www.revsys.com
-  css_class: fas fa-briefcase
+  css_class: far fa-building
+  # css_class: far fa-briefcase
 
 - title: "PSF Director and Vice Chair"
   url: https://www.python.org/psf/records/board/history/
-  css_class: fas fa-handshake
+  css_class: fab fa-python
   rel: nofollow
 
 - title: "DEFNA President and Cofounder"
   url: https://www.defna.org
-  css_class: fas fa-briefcase
+  css_class: fab fa-python
 
 - title: "DjangoCon US 2015-2022 Organizer"
   url: https://www.djangocon.us
-  css_class: fas fa-briefcase
+  # css_class: far fa-briefcase
+  css_class: fab fa-python
 
 - title: "Django News Newsletter Cofounder"
   url: https://django-news.com
-  css_class: fas fa-briefcase
+  css_class: far fa-newspaper
 
 - title: "Django Packages Maintainer"
   url: https://djangopackages.org
-  css_class: fas fa-briefcase
+  css_class: fas fa-hammer
 
 - title: "Awesome Django Maintainer"
   url: https://awesomedjango.org
-  css_class: fas fa-briefcase
+  css_class: fas fa-hammer
 
 # - title: "2019 Malcolm Tredinnick Memorial Prize recipient"
 #   url: https://www.djangoproject.com/weblog/2019/dec/17/2019-malcolm-tredinnick-prize--jeff-triplett/
-#   css_class: fas fa-star
+#   css_class: far fa-star
 #   nofollow: true
 #   rel: nofollow
 
 # - title: "I am a PSF Fellow (Q4 2018)"
 #   url: https://www.python.org/psf/fellows/
-#   css_class: fas fa-star
+#   css_class: far fa-star
 #   nofollow: true
 #   rel: nofollow
