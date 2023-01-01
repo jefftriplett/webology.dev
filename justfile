@@ -12,6 +12,10 @@
 @cibuild:
     just bootstrap
 
+@clean:
+    rm -f Gemfile.lock
+    rm -rf .vendor
+
 # opens a console
 @console:
     echo "TODO: console"
@@ -23,6 +27,9 @@
 # sets up a project to be used for the first time
 @setup:
     just bootstrap
+
+@start +ARGS="--detach":
+    just server {{ ARGS }}
 
 # runs tests
 @test:
