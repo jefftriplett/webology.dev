@@ -34,6 +34,9 @@
 @stop:
     docker-compose down
 
+@tail:
+    docker-compose logs --follow --tail 100
+
 # runs tests
 @test:
     echo "TODO: test"
