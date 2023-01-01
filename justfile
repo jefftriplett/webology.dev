@@ -49,6 +49,9 @@
         --in-place \
         --tabwidth 2 \
         *.html _includes/*.html _layouts/*.html
+    rustywind \
+        --write \
+        .
 
 @screenshots ARGS="--no-clobber":
     shot-scraper multi {{ ARGS }} ./shots.yml
