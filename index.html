@@ -6,8 +6,8 @@ title: Links
 
 <div class="main">
   {%- for link in site.data.links -%}
-    <ul class="px-4 mx-auto sm:max-w-2xl mb-4">
-      <li class="px-6 py-4 text-gray-100 border-2 border-gray-200 shadow-sm rounded-full text-gray-100 hover:text-blue-800 hover:bg-gray-200 text-2xl">
+    <ul class="px-4 mx-auto mb-4 sm:max-w-2xl">
+      <li class="py-4 px-6 text-2xl text-gray-100 rounded-full border-2 border-gray-200 shadow-sm hover:text-blue-800 hover:bg-gray-200">
         <i
           class="{% if link.css_class %}{{ link.css_class }} pr-1{% else %}{% endif %}"></i>
         <a
