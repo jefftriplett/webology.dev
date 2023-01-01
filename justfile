@@ -31,13 +31,16 @@
 @start +ARGS="--detach":
     just server {{ ARGS }}
 
+@stop:
+    docker-compose down
+
 # runs tests
 @test:
     echo "TODO: test"
 
 # updates a project to run at its current version
 @update:
-    docker-compose pull
+    just bootstrap
 
 # ----
 
