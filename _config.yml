@@ -61,13 +61,6 @@ pagination:
   per_page: 5
   permalink: "/:num/" # pagination link that will be appended
 
-# if you don't need projects, comment the *projects* configs below
-#projects: true
-
-# if you don't need "about" or "blog", comment them out below
-about: false
-blog: false
-
 plugins:
 - jekyll-feed
 - jekyll-gist
