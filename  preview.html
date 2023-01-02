@@ -10,11 +10,11 @@ title: Preview
 
   <div class="flex justify-center">
     <span class="link">
-      <img class="object-center mb-3 w-64 rounded-full" alt="{{ site.name }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+      <img class="object-center mb-3 w-64 rounded-full" alt="{{ site.title }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
     </span>
   </div>
 
-  <h1 class="text-6xl font-semibold text-gray-100">{{ site.name }}</h1>
+  <h1 class="text-6xl font-semibold text-gray-100">{{ site.title }}</h1>
 
   {% if site.bio %}
     <h2 class="mt-12 text-4xl font-semibold text-gray-100">{{ site.bio }}</h2>
