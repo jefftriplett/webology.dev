@@ -4,6 +4,7 @@ import cog
 links = {
     "https://dev.to": "fab fa-dev",
     "https://facebook.com/": "fab fa-facebook",
+    "https://flickr.com/": "fab fa-flickr",
     "https://github.com/": "fab fa-github",
     "https://gitlab.com/": "fab fa-gitlab",
     "https://hub.docker.com/": "fab fa-docker",
@@ -17,9 +18,11 @@ links = {
     "https://stackoverflow.com/": "fab fa-stackoverflow",
     "https://twitter.com/": "fab fa-twitter",
     "https://vimeo.com/": "fab fa-vimeo",
+    "https://www.flickr.com/": "fab fa-flickr",
     "https://www.linkedin.com/": "fab fa-linkedin",
     "https://www.quora.com/": "fab fa-quora",
     "https://www.reddit.com/": "fab fa-reddit",
+    "https://www.youtube.com/": "fab fa-youtube",
     "https://youtube.com/": "fab fa-youtube",
     "mailto:": "fab fa-mail",
 }
@@ -36,6 +39,7 @@ cog.outl("{% endif %}")
 ]]]{% endraw %}{% endcomment %}
 {% if include.link.url contains "https://dev.to" %}{% capture css_class %}fab fa-dev{% endcapture %}
 {% elsif include.link.url contains "https://facebook.com/" %}{% capture css_class %}fab fa-facebook{% endcapture %}
+{% elsif include.link.url contains "https://flickr.com/" %}{% capture css_class %}fab fa-flickr{% endcapture %}
 {% elsif include.link.url contains "https://github.com/" %}{% capture css_class %}fab fa-github{% endcapture %}
 {% elsif include.link.url contains "https://gitlab.com/" %}{% capture css_class %}fab fa-gitlab{% endcapture %}
 {% elsif include.link.url contains "https://hub.docker.com/" %}{% capture css_class %}fab fa-docker{% endcapture %}
@@ -49,9 +53,11 @@ cog.outl("{% endif %}")
 {% elsif include.link.url contains "https://stackoverflow.com/" %}{% capture css_class %}fab fa-stackoverflow{% endcapture %}
 {% elsif include.link.url contains "https://twitter.com/" %}{% capture css_class %}fab fa-twitter{% endcapture %}
 {% elsif include.link.url contains "https://vimeo.com/" %}{% capture css_class %}fab fa-vimeo{% endcapture %}
+{% elsif include.link.url contains "https://www.flickr.com/" %}{% capture css_class %}fab fa-flickr{% endcapture %}
 {% elsif include.link.url contains "https://www.linkedin.com/" %}{% capture css_class %}fab fa-linkedin{% endcapture %}
 {% elsif include.link.url contains "https://www.quora.com/" %}{% capture css_class %}fab fa-quora{% endcapture %}
 {% elsif include.link.url contains "https://www.reddit.com/" %}{% capture css_class %}fab fa-reddit{% endcapture %}
+{% elsif include.link.url contains "https://www.youtube.com/" %}{% capture css_class %}fab fa-youtube{% endcapture %}
 {% elsif include.link.url contains "https://youtube.com/" %}{% capture css_class %}fab fa-youtube{% endcapture %}
 {% elsif include.link.url contains "mailto:" %}{% capture css_class %}fab fa-mail{% endcapture %}
 {% else %}{% capture css_class %}{% endcapture %}
