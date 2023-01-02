@@ -16,6 +16,10 @@
     rm -f Gemfile.lock
     rm -rf .vendor
 
+@cog:
+    cog -r _includes/link-css-classes.html
+    cog -r README.md
+
 # opens a console
 @console:
     echo "TODO: console"

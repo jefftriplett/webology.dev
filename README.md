@@ -17,3 +17,24 @@ This website started off as a fork of [Indigo-based Minimalist Jekyll Template](
 ## Original License
 
 [MIT](https://kopplin.mit-license.org/) License © Sérgio Kopplin
+
+<!-- [[[cog
+import cog
+import requests
+response = requests.get("https://raw.githubusercontent.com/jefftriplett/actions/main/footer.txt")
+response.raise_for_status()
+cog.outl(response.text.strip())
+]]] -->
+## Author
+
+👤 **Jeff Triplett**
+
+* Website: https://jefftriplett.com
+* Mastodon: [@webology](https://mastodon.social/@webology)
+* Twitter: [@webology](https://twitter.com/webology)
+* GitHub: [@jefftriplett](https://github.com/jefftriplett)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+<!-- [[[end]]] -->
