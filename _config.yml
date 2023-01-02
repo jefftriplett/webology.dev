@@ -82,6 +82,8 @@ plugins:
 jekyll-mentions:
   base_url: https://github.com
 
+remote_theme: jefftriplett/webology-theme
+
 compress_html:
   ignore:
     envs:
