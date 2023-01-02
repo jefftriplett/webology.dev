@@ -4,19 +4,18 @@ layout: page
 title: Links
 ---
 
-<div class="main">
+<main>
   {%- for link in site.data.links -%}
     {% include link-css-classes.html link=link %}
-    <ul class="px-4 mx-auto mb-4 sm:max-w-2xl">
-      <li class="py-4 px-6 text-2xl text-center text-gray-100 rounded-full border-2 border-gray-200 shadow-sm hover:text-blue-800 hover:bg-gray-200">
+    <ul>
+      <li>
         <i
           class="{{ css_class }} {% if link.css_class %}{{ link.css_class }}{% endif %} pr-1"></i>
         <a
           href="{{ link.url }}"
-          class=""
           {% if link.rel %}rel="{{ link.rel }}" {% endif %}
           target="_blank">{{ link.title }}</a>
       </li>
     </ul>
   {%- endfor -%}
-</div>
+</main>

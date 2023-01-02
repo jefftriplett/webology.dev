@@ -14,21 +14,10 @@ layout: null
     <link rel="icon" href="{{ site.favicon | default: "https://fav.farm/🌲" }}" />
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style type="text/tailwindcss">
-      .description {
-        @apply text-xl font-semibold text-gray-100;
-      }
-      .social-links {
-        @apply px-4 py-4 mx-auto mb-4 text-4xl font-semibold text-center text-gray-100 sm:max-w-2xl;
-      }
-      .title {
-        @apply text-3xl font-semibold text-gray-100;
-      }
-    </style>
+    {% include scripts.html %}
   </head>
-  <body class="min-h-screen bg-gradient-to-b from-blue-600 via-blue-800 to-gray-900">
-    <div class="grid grid-cols-1 overflow-y-auto {{ page.title | downcase }}">
+  <body>
+    <div class="contents {{ page.title | downcase }}">
       {{ content }}
     </div>
   </body>

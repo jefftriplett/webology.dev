@@ -1,0 +1,30 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<style type="text/tailwindcss">
+  body {
+    @apply min-h-screen bg-gradient-to-b from-blue-600 via-blue-800 to-gray-900;
+  }
+  header {
+    @apply py-8 px-4 mx-auto mb-4 text-center sm:max-w-xl;
+  }
+  footer {
+    @apply px-4 mx-auto mb-4 font-semibold text-center text-gray-100 sm:max-w-xl;
+  }
+  main > ul {
+    @apply px-4 mx-auto mb-4 sm:max-w-2xl;
+  }
+  main > ul > li {
+    @apply py-4 px-6 text-2xl text-center text-gray-100 rounded-full border-2 border-gray-200 shadow-sm hover:text-blue-800 hover:bg-gray-200;
+  }
+  .contents {
+    @apply grid grid-cols-1 overflow-y-auto;
+  }
+  .description {
+    @apply text-xl font-semibold text-gray-100;
+  }
+  .social-links {
+    @apply px-4 py-4 mx-auto mb-4 text-4xl font-semibold text-center text-gray-100 sm:max-w-2xl;
+  }
+  .title {
+    @apply text-3xl font-semibold text-gray-100;
+  }
+</style>
