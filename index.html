@@ -1,21 +1,4 @@
 ---
 image: /assets/images/preview.png
-layout: page
-title: Links
+layout: homepage
 ---
-
-<main>
-  {%- for link in site.data.links -%}
-    {% include link-css-classes.html link=link %}
-    <ul>
-      <li>
-        <i
-          class="{{ css_class }} {% if link.css_class %}{{ link.css_class }}{% endif %} pr-1"></i>
-        <a
-          href="{{ link.url }}"
-          {% if link.rel %}rel="{{ link.rel }}" {% endif %}
-          target="_blank">{{ link.title }}</a>
-      </li>
-    </ul>
-  {%- endfor -%}
-</main>
