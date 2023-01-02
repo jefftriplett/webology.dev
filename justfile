@@ -13,7 +13,7 @@
     just bootstrap
 
 @clean:
-    rm -rf .vendor Gemfile.lock
+    rm -rf .vendor _site Gemfile.lock
 
 @cog:
     cog -r _includes/link-css-classes.html
