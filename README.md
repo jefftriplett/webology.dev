@@ -12,7 +12,7 @@ Longer: I bought webology.dev a few years back and wanted to build a more generi
 
 ## Original Theme
 
-This website started off as a fork of [Indigo-based Minimalist Jekyll Template](https://github.com/zchef2k/indigo-linkinbioa) then grew legs of its own.
+This website started off as a fork of [Indigo-based Minimalist Jekyll Template](https://github.com/zchef2k/indigo-linkinbio) then grew legs of its own.
 
 ## Original License
 
