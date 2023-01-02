@@ -1,24 +1,59 @@
+{% comment %}{% raw %}
+[[[cog
+import cog
+links = {
+    "https://dev.to": "fab fa-dev",
+    "https://facebook.com/": "fab fa-facebook",
+    "https://github.com/": "fab fa-github",
+    "https://gitlab.com/": "fab fa-gitlab",
+    "https://hub.docker.com/": "fab fa-docker",
+    "https://instagram.com/": "fab fa-instagram",
+    "https://last.fm/": "fab fa-lastfm",
+    "https://mastodon.social/": "fab fa-mastodon",
+    "https://medium.com/": "fab fa-medium",
+    "https://open.spotify.com/": "fab fa-spotify",
+    "https://pinboard.in/": "fas fa-thumbtack",
+    "https://pinterest.com/": "fab fa-pinterest",
+    "https://stackoverflow.com/": "fab fa-stackoverflow",
+    "https://twitter.com/": "fab fa-twitter",
+    "https://vimeo.com/": "fab fa-vimeo",
+    "https://www.linkedin.com/": "fab fa-linkedin",
+    "https://www.quora.com/": "fab fa-quora",
+    "https://www.reddit.com/": "fab fa-reddit",
+    "https://youtube.com/": "fab fa-youtube",
+    "mailto:": "fab fa-mail",
+}
+first = True
+for link in links:
+    if first:
+        if_statement = "if"
+    else:
+        if_statement = "elsif"
+    cog.outl(f'{{% {if_statement} include.link.url contains "{link}" %}}{{% capture css_class %}}{links[link]}{{% endcapture %}}')
+    first = False
+cog.outl("{% else %}{% capture css_class %}{% endcapture %}")
+cog.outl("{% endif %}")
+]]]{% endraw %}{% endcomment %}
 {% if include.link.url contains "https://dev.to" %}{% capture css_class %}fab fa-dev{% endcapture %}
-  {% elsif include.link.url contains "https://facebook.com/" %}{% capture css_class %}fab fa-facebook{% endcapture %}
-  {% elsif include.link.url contains "https://github.com/" %}{% capture css_class %}fab fa-github{% endcapture %}
-  {% elsif include.link.url contains "https://gitlab.com/" %}{% capture css_class %}fab fa-gitlab{% endcapture %}
-  {% elsif include.link.url contains "https://hub.docker.com/" %}{% capture css_class %}fab fa-docker{% endcapture %}
-  {% elsif include.link.url contains "https://instagram.com/" %}{% capture css_class %}fab fa-instagram{% endcapture %}
-  {% elsif include.link.url contains "https://lanyrd.com/" %}{% capture css_class %}fab fa-microphone{% endcapture %}
-  {% elsif include.link.url contains "https://last.fm/" %}{% capture css_class %}fab fa-lastfm{% endcapture %}
-  {% elsif include.link.url contains "https://mastodon.social/" %}{% capture css_class %}fab fa-mastodon{% endcapture %}
-  {% elsif include.link.url contains "https://medium.com/" %}{% capture css_class %}fab fa-medium{% endcapture %}
-  {% elsif include.link.url contains "https://open.spotify.com/" %}{% capture css_class %}fab fa-spotify{% endcapture %}
-  {% elsif include.link.url contains "https://pinboard.in/" %}{% capture css_class %}fas fa-thumbtack{% endcapture %}
-  {% elsif include.link.url contains "https://pinterest.com/" %}{% capture css_class %}fab fa-pinterest{% endcapture %}
-  {% elsif include.link.url contains "https://plus.google.com/" %}{% capture css_class %}fab fa-google{% endcapture %}
-  {% elsif include.link.url contains "https://stackoverflow.com/" %}{% capture css_class %}fab fa-stackoverflow{% endcapture %}
-  {% elsif include.link.url contains "https://twitter.com/" %}{% capture css_class %}fab fa-twitter{% endcapture %}
-  {% elsif include.link.url contains "https://vimeo.com/" %}{% capture css_class %}fab fa-vimeo{% endcapture %}
-  {% elsif include.link.url contains "https://www.linkedin.com/" %}{% capture css_class %}fab fa-linkedin{% endcapture %}
-  {% elsif include.link.url contains "https://www.quora.com/" %}{% capture css_class %}fab fa-quora{% endcapture %}
-  {% elsif include.link.url contains "https://www.reddit.com/" %}{% capture css_class %}fab fa-reddit{% endcapture %}
-  {% elsif include.link.url contains "https://youtube.com/" %}{% capture css_class %}fab fa-youtube{% endcapture %}
-  {% elsif include.link.url contains "mailto:" %}{% capture css_class %}fab fa-mail{% endcapture %}
+{% elsif include.link.url contains "https://facebook.com/" %}{% capture css_class %}fab fa-facebook{% endcapture %}
+{% elsif include.link.url contains "https://github.com/" %}{% capture css_class %}fab fa-github{% endcapture %}
+{% elsif include.link.url contains "https://gitlab.com/" %}{% capture css_class %}fab fa-gitlab{% endcapture %}
+{% elsif include.link.url contains "https://hub.docker.com/" %}{% capture css_class %}fab fa-docker{% endcapture %}
+{% elsif include.link.url contains "https://instagram.com/" %}{% capture css_class %}fab fa-instagram{% endcapture %}
+{% elsif include.link.url contains "https://last.fm/" %}{% capture css_class %}fab fa-lastfm{% endcapture %}
+{% elsif include.link.url contains "https://mastodon.social/" %}{% capture css_class %}fab fa-mastodon{% endcapture %}
+{% elsif include.link.url contains "https://medium.com/" %}{% capture css_class %}fab fa-medium{% endcapture %}
+{% elsif include.link.url contains "https://open.spotify.com/" %}{% capture css_class %}fab fa-spotify{% endcapture %}
+{% elsif include.link.url contains "https://pinboard.in/" %}{% capture css_class %}fas fa-thumbtack{% endcapture %}
+{% elsif include.link.url contains "https://pinterest.com/" %}{% capture css_class %}fab fa-pinterest{% endcapture %}
+{% elsif include.link.url contains "https://stackoverflow.com/" %}{% capture css_class %}fab fa-stackoverflow{% endcapture %}
+{% elsif include.link.url contains "https://twitter.com/" %}{% capture css_class %}fab fa-twitter{% endcapture %}
+{% elsif include.link.url contains "https://vimeo.com/" %}{% capture css_class %}fab fa-vimeo{% endcapture %}
+{% elsif include.link.url contains "https://www.linkedin.com/" %}{% capture css_class %}fab fa-linkedin{% endcapture %}
+{% elsif include.link.url contains "https://www.quora.com/" %}{% capture css_class %}fab fa-quora{% endcapture %}
+{% elsif include.link.url contains "https://www.reddit.com/" %}{% capture css_class %}fab fa-reddit{% endcapture %}
+{% elsif include.link.url contains "https://youtube.com/" %}{% capture css_class %}fab fa-youtube{% endcapture %}
+{% elsif include.link.url contains "mailto:" %}{% capture css_class %}fab fa-mail{% endcapture %}
 {% else %}{% capture css_class %}{% endcapture %}
 {% endif %}
+{% comment %}[[[end]]]{% endcomment %}
