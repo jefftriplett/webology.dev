@@ -18,7 +18,6 @@
 - title: "Partner and Developer at REVSYS"
   url: https://www.revsys.com
   css_class: far fa-building
-  # css_class: far fa-briefcase
 
 - title: "PSF Director and Vice Chair"
   url: https://www.python.org/psf/records/board/history/
@@ -31,7 +30,6 @@
 
 - title: "DjangoCon US 2015-2022 Organizer"
   url: https://www.djangocon.us
-  # css_class: far fa-briefcase
   css_class: fab fa-python
 
 - title: "Django News Newsletter Cofounder"
@@ -45,15 +43,3 @@
 - title: "Awesome Django Maintainer"
   url: https://awesomedjango.org
   css_class: fas fa-hammer
-
-# - title: "2019 Malcolm Tredinnick Memorial Prize recipient"
-#   url: https://www.djangoproject.com/weblog/2019/dec/17/2019-malcolm-tredinnick-prize--jeff-triplett/
-#   css_class: far fa-star
-#   nofollow: true
-#   rel: nofollow
-
-# - title: "I am a PSF Fellow (Q4 2018)"
-#   url: https://www.python.org/psf/fellows/
-#   css_class: far fa-star
-#   nofollow: true
-#   rel: nofollow
