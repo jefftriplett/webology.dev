@@ -1,6 +1,6 @@
 - title: "I occassionally blog on jefftriplett.com"
   url: https://jefftriplett.com
-  css_class: text-white fas fa-pencil-alt
+  css_class: fas fa-pencil-alt
   rel: me
 
 - title: "Follow @webology on Mastodon"
