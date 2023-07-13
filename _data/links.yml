@@ -7,6 +7,16 @@
   url: https://mastodon.social/@webology
   rel: me
 
+- title: "Follow @webology on Bluesky"
+  url: https://bsky.app/profile/webology.bsky.social
+  rel: nofollow
+  css_class: fas fa-cloud
+
+- title: "Follow @jefftriplett on Threads"
+  url: https://www.threads.net/@jefftriplett
+  rel: nofollow
+  css_class: fas fa-cloud
+
 - title: "Follow @webology on Twitter"
   url: https://twitter.com/webology
   rel: me
