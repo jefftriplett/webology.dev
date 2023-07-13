@@ -3,14 +3,19 @@
 
 # installs/updates all dependencies
 @bootstrap:
-    docker-compose pull
-    docker-compose build
-    pip install -r requirements.in
-    playwright install
+    #!/usr/bin/env bash
+    set -euo pipefail
 
-# invoked by continuous integration servers to run tests
-@cibuild:
-    just bootstrap
+    if [ ! -f "docker-compose.override.yml" ]; then
+        echo "docker-compose.override.yml created"
+        cp docker-compose.override.yml.example docker-compose.override.yml
+    fi
+
+    docker compose build --force-rm
+
+    pip install -r requirements.in
+
+    playwright install
 
 @clean:
     rm -rf .vendor _site Gemfile.lock
@@ -19,39 +24,8 @@
     cog -r _includes/link-css-classes.html
     cog -r README.md
 
-# opens a console
-@console:
-    echo "TODO: console"
-
-@restart:
-    docker-compose restart
-
-# starts app
-@server *ARGS:
-    docker-compose up {{ ARGS }}
-
-# sets up a project to be used for the first time
-@setup:
-    just bootstrap
-
-@start +ARGS="--detach":
-    just server {{ ARGS }}
-
-@stop:
+@down:
     docker-compose down
-
-@tail:
-    docker-compose logs --follow --tail 100
-
-# runs tests
-@test:
-    echo "TODO: test"
-
-# updates a project to run at its current version
-@update:
-    just bootstrap
-
-# ----
 
 @fmt:
     just --fmt --unstable
@@ -65,5 +39,32 @@
         --write \
         .
 
+@restart:
+    docker-compose restart
+
 @screenshots ARGS="--no-clobber":
     shot-scraper multi {{ ARGS }} ./shots.yml
+
+# starts app
+@server *ARGS:
+    docker-compose up {{ ARGS }}
+
+# sets up a project to be used for the first time
+@setup:
+    just bootstrap
+
+@start *ARGS="--detach":
+    just up {{ ARGS }}
+
+@stop:
+    just down
+
+@tail:
+    docker-compose logs --follow --tail 100
+
+@up *ARGS:
+    docker-compose up {{ ARGS }}
+
+# updates a project to run at its current version
+@update:
+    just bootstrap
