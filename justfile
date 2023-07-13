@@ -31,13 +31,7 @@
     just --fmt --unstable
 
 @lint:
-    djhtml \
-        --in-place \
-        --tabwidth 2 \
-        *.html _includes/*.html _layouts/*.html
-    rustywind \
-        --write \
-        .
+    pre-commit run --all-files
 
 @restart:
     docker-compose restart
@@ -67,4 +61,5 @@
 
 # updates a project to run at its current version
 @update:
+    pre-commit autoupdate
     just bootstrap
