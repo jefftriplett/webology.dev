@@ -2,7 +2,7 @@
     just --list
 
 # installs/updates all dependencies
-@bootstrap:
+bootstrap:
     #!/usr/bin/env bash
     set -euo pipefail
 
