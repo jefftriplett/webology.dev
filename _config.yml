@@ -88,7 +88,7 @@ exclude:
 - "*.yml"
 - bin
 - CNAME
-- docker-compose.yml
+- compose.yml
 - Gemfile
 - Gemfile.lock
 - justfile

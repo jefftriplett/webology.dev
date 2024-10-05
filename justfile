@@ -6,11 +6,6 @@ bootstrap:
     #!/usr/bin/env bash
     set -euo pipefail
 
-    if [ ! -f "docker-compose.override.yml" ]; then
-        echo "docker-compose.override.yml created"
-        cp docker-compose.override.yml.example docker-compose.override.yml
-    fi
-
     docker compose build --force-rm
 
     pip install -r requirements.in
