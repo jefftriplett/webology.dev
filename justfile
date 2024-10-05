@@ -1,3 +1,5 @@
+export JUST_UNSTABLE := "true"
+
 @_default:
     just --list
 
@@ -8,7 +10,8 @@ bootstrap:
 
     docker compose build --force-rm
 
-    pip install -r requirements.in
+    pip install --upgrade pip uv
+    uv pip install --requirement requirements.in
 
     playwright install
 
@@ -16,27 +19,26 @@ bootstrap:
     rm -rf .vendor _site Gemfile.lock
 
 @cog:
-    cog -r _includes/link-css-classes.html
-    cog -r README.md
+    uv tool run cog -r README.md
 
 @down:
-    docker-compose down
+    docker compose down
 
 @fmt:
-    just --fmt --unstable
+    just --fmt
 
 @lint:
-    pre-commit run --all-files
+    uv run --with pre-commit-uv pre-commit run --all-files
 
 @restart:
-    docker-compose restart
+    docker compose restart
 
 @screenshots ARGS="--no-clobber":
-    shot-scraper multi {{ ARGS }} ./shots.yml
+    uv run shot-scraper multi {{ ARGS }} ./shots.yml
 
 # starts app
 @server *ARGS:
-    docker-compose up {{ ARGS }}
+    docker compose up {{ ARGS }}
 
 # sets up a project to be used for the first time
 @setup:
@@ -49,12 +51,12 @@ bootstrap:
     just down
 
 @tail:
-    docker-compose logs --follow --tail 100
+    docker compose logs --follow --tail 100
 
 @up *ARGS:
-    docker-compose up {{ ARGS }}
+    docker compose up {{ ARGS }}
 
 # updates a project to run at its current version
 @update:
-    pre-commit autoupdate
+    uv run --with pre-commit-uv pre-commit autoupdate
     just bootstrap
