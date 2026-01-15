@@ -1,26 +1,19 @@
 services:
 
-  devd:
-    image: ghcr.io/jefftriplett/devd:latest
-    command: --livewatch
-    expose:
-      - 8000
-    init: true
+  caddy:
+    image: caddy:alpine
+    command: caddy file-server --root /srv/_site --listen :8000
     ports:
       - 8000:8000
     volumes:
-      - .:/srv/jekyll
+      - .:/srv
 
   jekyll:
     image: jekyll/jekyll:latest
-    command: jekyll serve --watch --port 4000
+    command: jekyll build --watch
     environment:
       - BUNDLE_PATH=/usr/local/bundle
-    expose:
-      - 4000
     init: true
-    ports:
-      - 4000:4000
     volumes:
       - .:/srv/jekyll:cached
       - ./.vendor/bundle:/usr/local/bundle:cached
