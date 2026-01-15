@@ -22,15 +22,27 @@
     @apply text-base md:text-lg text-blue-100 mt-1;
   }
   main {
-    @apply w-full max-w-3xl mx-auto space-y-10;
+    @apply w-full max-w-4xl mx-auto space-y-10;
   }
   .link-group {
-    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-3 px-2 sm:px-0;
+    @apply px-2 sm:px-0;
   }
-  .link-group:first-child {
-    @apply grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 max-w-md mx-auto w-full;
+  .link-group__title {
+    @apply text-lg md:text-xl font-semibold text-white text-center mb-4;
   }
-  .link-group:first-child .link-item {
+  .link-group__links {
+    @apply grid gap-3 sm:gap-3;
+  }
+  .link-group--grid .link-group__links {
+    @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+  }
+  .link-group--list {
+    @apply max-w-md mx-auto w-full;
+  }
+  .link-group--list .link-group__links {
+    @apply grid-cols-1;
+  }
+  .link-group--list .link-item {
     @apply bg-yellow-400/90 text-blue-900 border-yellow-300 font-semibold hover:bg-yellow-300 hover:text-blue-950;
   }
   .link-item {
@@ -40,7 +52,7 @@
     @apply opacity-80;
   }
   .social-links {
-    @apply flex flex-wrap justify-center gap-3 sm:gap-4 py-6 mt-10 mx-auto max-w-md px-2 sm:px-0;
+    @apply flex flex-wrap justify-center gap-3 sm:gap-4 mt-10 py-4 mx-auto max-w-md px-2 sm:px-0;
   }
   .social-links a {
     @apply flex items-center justify-center w-11 h-11 md:w-12 md:h-12 text-lg md:text-xl text-white bg-white/10 backdrop-blur-sm rounded-full border border-white/20 transition-all duration-200 hover:bg-white hover:text-blue-600 hover:scale-110;

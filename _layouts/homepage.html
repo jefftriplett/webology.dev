@@ -5,19 +5,24 @@ layout: default
 
 <main>
   {%- for section in site.data.links -%}
-    <section class="link-group">
-      {%- for link in section.links -%}
-        {% include link-css-classes.html link=link %}
-        <a
-          href="{{ link.url }}"
-          class="link-item"
-          {% if link.nofollow %}rel="nofollow"{% endif %}
-          {% if link.rel %}rel="{{ link.rel }}"{% endif %}
-          target="_blank">
-          <i class="{% if link.css_class %}{{ link.css_class }}{% else %}{{ css_class }}{% endif %}"></i>
-          <span>{{ link.title }}</span>
-        </a>
-      {%- endfor -%}
+    <section class="link-group link-group--{{ section.style | default: 'grid' }}">
+      {%- if section.title and section.title != "" -%}
+        <h2 class="link-group__title">{{ section.title }}</h2>
+      {%- endif -%}
+      <div class="link-group__links">
+        {%- for link in section.links -%}
+          {% include link-css-classes.html link=link %}
+          <a
+            href="{{ link.url }}"
+            class="link-item"
+            {% if link.nofollow %}rel="nofollow"{% endif %}
+            {% if link.rel %}rel="{{ link.rel }}"{% endif %}
+            target="_blank">
+            <i class="{% if link.css_class %}{{ link.css_class }}{% else %}{{ css_class }}{% endif %}"></i>
+            <span>{{ link.title }}</span>
+          </a>
+        {%- endfor -%}
+      </div>
     </section>
   {%- endfor -%}
 </main>
