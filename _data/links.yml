@@ -1,33 +1,44 @@
 - group: "main"
+  title: ""
+  style: "list"
   links:
     - title: "I blog on jefftriplett.com"
       url: https://jefftriplett.com
       css_class: fas fa-pencil-alt
       rel: me
 
+    - title: "I microblog on micro.webology.dev"
+      url: https://micro.webology.dev
+      css_class: fas fa-pencil-alt
+      rel: me
+
 - group: "social"
+  title: "Follow Me"
+  style: "grid"
   links:
-    - title: "Follow @webology on Mastodon"
+    - title: "@webology on Mastodon"
       url: https://mastodon.social/@webology
       rel: me
 
-    - title: "Follow @jefftriplett on GitHub"
+    - title: "@jefftriplett on GitHub"
       url: https://github.com/jefftriplett
       nofollow: true
 
-    - title: "Follow @webology on Bluesky"
+    - title: "@webology on Bluesky"
       url: https://bsky.app/profile/webology.bsky.social
       nofollow: true
 
-    - title: "Follow @jefftriplett on Threads"
+    - title: "@jefftriplett on Threads"
       url: https://www.threads.net/@jefftriplett
       nofollow: true
 
-    - title: "Follow @webology on X/Twitter"
+    - title: "@webology on X/Twitter"
       url: https://twitter.com/webology
       rel: me
 
 - group: "work"
+  title: "Work"
+  style: "list"
   links:
     - title: "Partner and Developer at REVSYS"
       url: https://www.revsys.com
@@ -38,6 +49,8 @@
       css_class: fab fa-python
 
 - group: "community"
+  title: "Community"
+  style: "grid"
   links:
     - title: "Past: PSF Director and Vice Chair (2017-2023)"
       url: https://www.python.org/psf/records/board/history/
