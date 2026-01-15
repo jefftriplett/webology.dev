@@ -15,24 +15,31 @@ bootstrap:
 
     playwright install
 
+# removes generated files
 @clean:
     rm -rf .vendor _site Gemfile.lock
 
+# updates README.md with cog
 @cog:
     uv tool run cog -r README.md
 
+# stops all docker services
 @down:
     docker compose down
 
+# formats the justfile
 @fmt:
     just --fmt
 
+# formats html and sorts tailwind classes
 @lint:
     uv run --with pre-commit-uv pre-commit run --all-files
 
+# restarts all docker services
 @restart:
     docker compose restart
 
+# generates screenshots using shot-scraper
 @screenshots ARGS="--no-clobber":
     uv run shot-scraper multi {{ ARGS }} ./shots.yml
 
@@ -44,15 +51,19 @@ bootstrap:
 @setup:
     just bootstrap
 
+# starts server in detached mode
 @start *ARGS="--detach":
     just up {{ ARGS }}
 
+# stops all docker services
 @stop:
     just down
 
+# follows docker container logs
 @tail:
     docker compose logs --follow --tail 100
 
+# starts docker services
 @up *ARGS:
     docker compose up {{ ARGS }}
 

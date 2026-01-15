@@ -1,55 +1,65 @@
-- title: "I blog on jefftriplett.com"
-  url: https://jefftriplett.com
-  css_class: fas fa-pencil-alt
-  rel: me
+- group: "main"
+  links:
+    - title: "I blog on jefftriplett.com"
+      url: https://jefftriplett.com
+      css_class: fas fa-pencil-alt
+      rel: me
 
-- title: "Follow @webology on Mastodon"
-  url: https://mastodon.social/@webology
-  rel: me
+- group: "social"
+  links:
+    - title: "Follow @webology on Mastodon"
+      url: https://mastodon.social/@webology
+      rel: me
 
-- title: "Follow @webology on Bluesky"
-  url: https://bsky.app/profile/webology.bsky.social
-  rel: nofollow
-  css_class: fas fa-cloud
+    - title: "Follow @jefftriplett on GitHub"
+      url: https://github.com/jefftriplett
+      nofollow: true
 
-- title: "Follow @jefftriplett on Threads"
-  url: https://www.threads.net/@jefftriplett
-  rel: nofollow
-  css_class: fas fa-cloud
+    - title: "Follow @webology on Bluesky"
+      url: https://bsky.app/profile/webology.bsky.social
+      nofollow: true
 
-- title: "Follow @webology on Twitter"
-  url: https://twitter.com/webology
-  rel: me
+    - title: "Follow @jefftriplett on Threads"
+      url: https://www.threads.net/@jefftriplett
+      nofollow: true
 
-- title: "Follow @jefftriplett on GitHub"
-  url: https://github.com/jefftriplett
-  rel: nofollow
+    - title: "Follow @webology on X/Twitter"
+      url: https://twitter.com/webology
+      rel: me
 
-- title: "Partner and Developer at REVSYS"
-  url: https://www.revsys.com
-  css_class: far fa-building
+- group: "work"
+  links:
+    - title: "Partner and Developer at REVSYS"
+      url: https://www.revsys.com
+      css_class: far fa-building
 
-- title: "Past: PSF Director and Vice Chair (2017-2023)"
-  url: https://www.python.org/psf/records/board/history/
-  css_class: fab fa-python
-  rel: nofollow
+    - title: "DSF President and Director (2025-present)"
+      url: https://www.djangoproject.com/foundation/
+      css_class: fab fa-python
 
-- title: "DEFNA Cofounder and former President"
-  url: https://www.defna.org
-  css_class: fab fa-python
+- group: "community"
+  links:
+    - title: "Past: PSF Director and Vice Chair (2017-2023)"
+      url: https://www.python.org/psf/records/board/history/
+      css_class: fab fa-python
+      nofollow: true
 
-- title: "DjangoCon US Organizer 2015-present"
-  url: https://www.djangocon.us
-  css_class: fab fa-python
+    - title: "DEFNA Cofounder and former President"
+      url: https://www.defna.org
+      css_class: fab fa-python
 
-- title: "Django News Newsletter Cofounder"
-  url: https://django-news.com
-  css_class: far fa-newspaper
+    - title: "DjangoCon US Organizer 2015-present"
+      url: https://www.djangocon.us
+      css_class: fab fa-python
 
-- title: "Django Packages Maintainer"
-  url: https://djangopackages.org
-  css_class: fas fa-hammer
+    - title: "Django News Newsletter Cofounder"
+      url: https://django-news.com
+      css_class: far fa-newspaper
 
-- title: "Awesome Django Maintainer"
-  url: https://awesomedjango.org
-  css_class: fas fa-hammer
+    - title: "Django Packages Maintainer"
+      url: https://djangopackages.org
+      css_class: fas fa-hammer
+
+    - title: "Awesome Django Maintainer"
+      url: https://awesomedjango.org
+      css_class: fas fa-hammer

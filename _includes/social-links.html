@@ -1,0 +1,85 @@
+<section class="social-links">
+  {% if site.github %}
+    <a class="link" data-title="github.com/{{ site.github }}" href="https://github.com/{{ site.github }}" rel="nofollow" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+  {% endif %}
+
+  {% if site.mastodon.username %}
+    <a class="link" data-title="@{{ site.mastodon.username }}@{{ site.mastodon.instance }}" href="https://{{ site.mastodon.instance }}/@{{ site.mastodon.username }}" rel="me" target="_blank">
+      <i class="fab fa-mastodon"></i>
+    </a>
+  {% endif %}
+
+  {% if site.twitter.username %}
+    <a class="link" data-title="X/Twitter @{{ site.twitter.username }}" href="https://x.com/{{ site.twitter.username }}" rel="nofollow" target="_blank">
+      <i class="fab fa-twitter"></i>
+    </a>
+  {% endif %}
+
+  {% if site.dev %}
+    <a class="link" data-title="dev.to/{{ site.dev }}" href="https://dev.to/{{ site.dev }}" rel="nofollow" target="_blank">
+      <i class="fab fa-dev"></i>
+    </a>
+  {% endif %}
+
+  {% if site.docker %}
+    <a class="link" data-title="hub.docker.com/u/{{ site.docker }}" href="https://hub.docker.com/u/{{ site.docker }}" rel="nofollow" target="_blank">
+      <i class="fab fa-docker"></i>
+    </a>
+  {% endif %}
+
+  {% if site.facebook %}
+    <a class="link" data-title="facebook.com/{{ site.facebook }}" href="https://facebook.com/{{ site.facebook }}" rel="nofollow" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+  {% endif %}
+
+  {% if site.instagram %}
+    <a class="link" data-title="instagram.com/{{ site.instagram }}" href="https://instagram.com/{{ site.instagram }}" rel="nofollow" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+  {% endif %}
+
+  {% if site.linkedin %}
+    <a class="link" data-title="www.linkedin.com/in/{{ site.linkedin }}" href="https://www.linkedin.com/in/{{ site.linkedin }}/" rel="nofollow" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  {% endif %}
+
+  {% if site.flickr %}
+    <a class="link" data-title="flickr.com/photos/{{ site.flickr }}" href="https://www.flickr.com/photos/{{ site.flickr }}" rel="nofollow" target="_blank">
+      <i class="fab fa-flickr"></i>
+    </a>
+  {% endif %}
+
+  {% if site.youtube %}
+    <a class="link" data-title="youtube.com/{{ site.youtube }}" href="https://youtube.com/{{ site.youtube }}" rel="nofollow" target="_blank">
+      <i class="fab fa-youtube"></i>
+    </a>
+  {% endif %}
+
+  {% if site.spotify %}
+    <a class="link" data-title="open.spotify.com/user/{{ site.spotify }}" href="https://open.spotify.com/user/{{ site.spotify }}" rel="nofollow" target="_blank">
+      <i class="fab fa-spotify"></i>
+    </a>
+  {% endif %}
+
+  {% if site.pinboard %}
+    <a class="link" data-title="pinboard.in/u:{{ site.pinboard }}" href="https://pinboard.in/u:{{ site.pinboard }}" rel="nofollow" target="_blank">
+      <i class="fas fa-thumbtack"></i>
+    </a>
+  {% endif %}
+
+  {% if site.lastfm %}
+    <a class="link" data-title="last.fm/user/{{ site.lastfm }}" href="https://last.fm/user/{{ site.lastfm }}" rel="nofollow" target="_blank">
+      <i class="fab fa-lastfm"></i>
+    </a>
+  {% endif %}
+
+  {% if site.gitlab %}
+    <a class="link" data-title="gitlab.com/{{ site.gitlab }}" href="https://gitlab.com/{{ site.gitlab }}" rel="nofollow" target="_blank">
+      <i class="fab fa-gitlab"></i>
+    </a>
+  {% endif %}
+</section>

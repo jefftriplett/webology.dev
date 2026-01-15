@@ -1,0 +1,54 @@
+<script src="https://cdn.tailwindcss.com"></script>
+<style type="text/tailwindcss">
+  body {
+    @apply min-h-screen bg-gradient-to-b from-blue-600 via-blue-800 to-gray-900;
+  }
+  .contents {
+    @apply flex flex-col min-h-screen py-8 px-4;
+    padding-bottom: max(2rem, env(safe-area-inset-bottom, 2rem));
+    padding-left: max(1rem, env(safe-area-inset-left, 1rem));
+    padding-right: max(1rem, env(safe-area-inset-right, 1rem));
+  }
+  header {
+    @apply flex flex-col items-center mb-8;
+  }
+  header img {
+    @apply w-24 h-24 md:w-28 md:h-28 rounded-full object-cover ring-4 ring-white/30 shadow-xl mb-4 transition-transform duration-300 hover:scale-105;
+  }
+  .title {
+    @apply text-2xl md:text-3xl font-bold text-white tracking-tight;
+  }
+  .description {
+    @apply text-base md:text-lg text-blue-100 mt-1;
+  }
+  main {
+    @apply w-full max-w-3xl mx-auto space-y-10;
+  }
+  .link-group {
+    @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-3 px-2 sm:px-0;
+  }
+  .link-group:first-child {
+    @apply grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 max-w-md mx-auto w-full;
+  }
+  .link-group:first-child .link-item {
+    @apply bg-yellow-400/90 text-blue-900 border-yellow-300 font-semibold hover:bg-yellow-300 hover:text-blue-950;
+  }
+  .link-item {
+    @apply flex items-center justify-center gap-2 py-3 px-4 min-h-[48px] text-sm md:text-base font-medium text-center text-white bg-white/10 backdrop-blur-sm rounded-xl border border-white/20 shadow-lg transition-all duration-200 ease-out hover:bg-white hover:text-blue-700 hover:scale-[1.02] hover:shadow-xl break-words;
+  }
+  .link-item i {
+    @apply opacity-80;
+  }
+  .social-links {
+    @apply flex flex-wrap justify-center gap-3 sm:gap-4 py-6 mt-10 mx-auto max-w-md px-2 sm:px-0;
+  }
+  .social-links a {
+    @apply flex items-center justify-center w-11 h-11 md:w-12 md:h-12 text-lg md:text-xl text-white bg-white/10 backdrop-blur-sm rounded-full border border-white/20 transition-all duration-200 hover:bg-white hover:text-blue-600 hover:scale-110;
+  }
+  footer {
+    @apply py-6 mt-auto text-center text-sm md:text-base text-blue-100/80;
+  }
+  footer a {
+    @apply text-white hover:underline;
+  }
+</style>

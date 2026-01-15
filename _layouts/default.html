@@ -1,0 +1,24 @@
+---
+layout: null
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% if site.analytics-google %}
+      {% include analytics-google.html %}
+    {% endif %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name=author content="{{ site.title }}">
+    {% seo %}
+    <link rel="icon" href="{{ site.favicon | default: "https://fav.farm/🌲" }}" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html','' }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    {% include scripts.html %}
+  </head>
+  <body>
+    <div class="contents {{ page.title | downcase }}">
+      {{ content }}
+    </div>
+  </body>
+</html>

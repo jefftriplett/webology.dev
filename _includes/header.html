@@ -1,0 +1,15 @@
+<header>
+  {% if site.about %}
+    <a href="{{ site.url }}/about">
+      <img alt="{{ site.title }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+    </a>
+  {% else %}
+    <img alt="{{ site.title }}" src="{% if site.external-image %}{{ site.picture }}{% else %}{{ site.url }}/{{ site.picture }}{% endif %}" />
+  {% endif %}
+
+  <h1 class="title">{{ site.title }}</h1>
+
+  {% if site.bio %}
+    <h2 class="description">{{ site.bio }}</h2>
+  {% endif %}
+</header>

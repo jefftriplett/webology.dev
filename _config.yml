@@ -67,7 +67,7 @@ plugins:
 - jekyll-mentions
 - jekyll-paginate
 - jekyll-redirect-from
-- jekyll-remote-theme
+# - jekyll-remote-theme  # now using local theme files
 - jekyll-seo-tag
 - jekyll-sitemap
 - jemoji
@@ -75,7 +75,11 @@ plugins:
 jekyll-mentions:
   base_url: https://github.com
 
-remote_theme: jefftriplett/webology-theme
+# remote_theme: jefftriplett/webology-theme  # now using local theme files
+
+mastodon:
+  username: webology
+  instance: mastodon.social
 
 compress_html:
   ignore:
