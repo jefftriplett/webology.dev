@@ -76,3 +76,43 @@
     - title: "Awesome Django Maintainer"
       url: https://awesomedjango.org
       css_class: fas fa-hammer
+
+- group: "projects"
+  title: "Projects"
+  style: "grid"
+  links:
+    - title: "Django Job Board"
+      url: https://djangojobboard.com
+      css_class: fab fa-python
+
+    - title: "DjangoTV"
+      url: https://djangotv.com
+      css_class: fab fa-python
+
+    - title: "Awesome Django"
+      url: https://awesomedjango.org
+      css_class: fab fa-python
+
+    - title: "Django Webring"
+      url: https://djangowebring.com
+      css_class: fab fa-python
+
+    - title: "Django Template Tags and Filters"
+      url: https://djangotemplatetagsandfilters.com
+      css_class: fab fa-python
+
+    - title: "Upgrade Django"
+      url: https://upgradedjango.com
+      css_class: fab fa-python
+
+    - title: "LFK.im"
+      url: https://lfk.im
+      css_class: fas fa-utensils
+
+    - title: "Lawrence Trail Hawks"
+      url: https://trailhawks.com
+      css_class: fas fa-running
+
+    - title: "Hawk Hundred"
+      url: https://hawkhundred.com
+      css_class: fas fa-running
